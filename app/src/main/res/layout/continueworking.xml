@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popuplogin"
+            android:gravity="center"
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="CONTINUE WORKING ?"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_redyfare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/btnfive"
+        android:gravity="center"
+        android:hint="Yes , Ready for Next Fare"
+        android:textColor="@color/textcolor"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/btnfive"
+        android:gravity="center"
+        android:hint="No , Log Me Out"
+        android:textColor="@color/textcolor"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/btnsave_reservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@mipmap/smallbutton"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:text="SAVE "
+        android:textColor="@color/textcolor"
+        android:textSize="15dp" />
+</LinearLayout>
+    </FrameLayout>
+</LinearLayout>

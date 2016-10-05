@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroundtwo">
+
+    <include
+        android:id="@+id/maintoolbar"
+        layout="@layout/main_toolbar"
+        android:visibility="visible"></include>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/maintoolbar"
+            android:layout_centerVertical="true">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/maintoolbar"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/txtcreate_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:text="Driver Account"
+                    android:textColor="@color/textcolor"
+                    android:textSize="18sp" />
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@mipmap/big_logo" />
+            <EditText
+                    android:id="@+id/emaildriver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/text_filed"
+                    android:paddingRight="10dp"
+                    android:inputType="textEmailAddress"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:drawableRight="@mipmap/mail_icon"
+                    android:hint="USERNAME"
+                    android:textSize="14sp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+            <EditText
+                    android:id="@+id/passdriver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/text_filed"
+                    android:paddingRight="10dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:drawableRight="@mipmap/lock_icon"
+                    android:hint="PASSWORD"
+                    android:inputType="textPassword"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <CheckBox
+                    android:id="@+id/chkremember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|start"
+                    android:button="@drawable/custome_checkbox"
+                    android:padding="10dp"
+                    android:text="REMEMBER ME"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolor" />
+                <TextView
+                    android:id="@+id/txt_forgotpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:text="FORGOT PASSWORD"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolor" />
+            </LinearLayout>
+            <Button
+                    android:id="@+id/logindriver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/button_selector"
+                    android:drawableLeft="@mipmap/create_log_icon"
+                    android:padding="10dp"
+                    android:text="LOGIN "
+                    android:textColor="@color/textcolor" />
+            <TextView
+                    android:id="@+id/tvcreate_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/create_account"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

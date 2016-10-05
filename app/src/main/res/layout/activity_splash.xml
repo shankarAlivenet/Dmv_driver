@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/Rel_lay"
+    android:background="@mipmap/background"
+
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:src="@mipmap/big_logo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Driver’s App"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/logo"
+        android:layout_alignLeft="@+id/logo"
+        android:layout_alignStart="@+id/logo" />
+
+
+</RelativeLayout>

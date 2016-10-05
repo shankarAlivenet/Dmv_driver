@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.alivenet.dmv.driverapplication"
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets { main { res.srcDirs = ['src/main/res', 'src/main/res/anim'] } }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/gcm.jar')
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.google.code.gson:gson:2.3'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.google.android.gms:play-services-auth:8.4.0'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.google.android.gms:play-services-identity:8.1.0'
+    compile 'com.google.android.gms:play-services-maps:4.3.23'
+    compile 'com.hbb20:ccp:1.4'
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    compile files('libs/sinch-android-rtc-3.3.5.jar')
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'org.sufficientlysecure:html-textview:1.8'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile project(":simple-crop-image-lib")
+
+}
+
+//apply plugin: 'com.google.gms.google-services'

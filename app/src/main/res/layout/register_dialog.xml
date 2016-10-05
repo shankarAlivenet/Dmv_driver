@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popuplogin"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/alert_image_white" />
+            <TextView
+                android:id="@+id/textSplash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Registered"
+                android:textColor="@color/White"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/text_carsname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/White"
+                android:textSize="14sp" />
+
+           <!-- <TextView
+                android:id="@+id/text_people_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="YOUR ACCOUNT HAS BEEN "
+                android:textColor="@color/White"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/text_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="SUBMITTED SUCCESSFULLY"
+                android:textColor="@color/White"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/text_aproved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="BUT NOT APPROVED YET."
+                android:textColor="@color/Whi-->te"
+                android:textSize="12sp" />
+            <Button
+                android:id="@+id/btnok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonok"
+                android:text="Ok"
+                android:textColor="@color/White"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

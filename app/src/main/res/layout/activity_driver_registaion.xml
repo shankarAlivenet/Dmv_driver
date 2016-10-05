@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="@mipmap/background">
+
+    <include
+        android:id="@+id/maintoolbar"
+        layout="@layout/main_toolbar"
+        android:visibility="visible"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/maintoolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/maintoolbar"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="DRIVER REGISTRATION"
+                    android:textColor="@color/textcolor"
+                    android:textSize="20dp" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_prifile_show"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/profile_icon"/>
+
+
+                <EditText
+                    android:id="@+id/edit_firname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:hint="First Name"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:inputType="text"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+                <EditText
+                    android:id="@+id/edit_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="Last Name"
+                    android:inputType="text"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="5dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+                <EditText
+                    android:id="@+id/edit_confirmemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:hint="Confirm Email"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+                <EditText
+                    android:id="@+id/edit_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+                <EditText
+                    android:id="@+id/edit_confirmpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+                <EditText
+                    android:id="@+id/edit_dctc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:hint="DCTC ID"
+                    android:inputType="number"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Spinner
+                        android:id="@+id/strip_countrycode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1.5"
+                        android:background="@mipmap/edittext_bg"
+                        android:padding="10dp"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/edittextsize" />
+
+
+                    <EditText
+                        android:layout_weight=".5"
+                        android:id="@+id/edit_cell"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@mipmap/edittext_bg"
+                        android:hint="Cell Phone "
+                        android:maxLength="12"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:inputType="phone"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:textSize="14sp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/textcolor"
+                        android:textColorHint="@color/textcolor" />
+
+
+                </LinearLayout>
+
+              <!--  <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+&lt;!&ndash;
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:defaultNameCode="US"  />&ndash;&gt;
+
+                &lt;!&ndash;<com.hbb20.CountryCodePicker
+                    android:layout_width="wrap_content"
+                    android:id="@+id/ccp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+
+                    app:contentColor="@android:color/black"/>&ndash;&gt;
+
+                <EditText
+                    android:id="@+id/edit_cell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:hint="Cell Phone "
+                    android:maxLength="12"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:inputType="phone"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+</LinearLayout>-->
+
+                <!--<EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:hint="Email"
+                    android:paddingBottom="5dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />-->
+               <!-- <EditText
+                    android:id="@+id/edit_confirmemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:hint="Confirm Email"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:singleLine="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />-->
+
+
+                <EditText
+                    android:id="@+id/edit_licenid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:hint="Driver's License"
+                    android:paddingBottom="5dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+
+                <EditText
+                    android:id="@+id/edit_exprdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:hint="Expiration Date"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:editable="false"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+              <!--  <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:hint="LAST NAME"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/White"
+                    android:textColorHint="@color/White" />-->
+                <EditText
+                    android:id="@+id/edit_nameinsu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="Name of Insurance"
+                    android:inputType="text"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+
+                <EditText
+                    android:id="@+id/edit_proofinsu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:hint="Proof of Insurance"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+                <EditText
+                    android:id="@+id/edit_vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="Taxi Model"
+                    android:inputType="text"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+
+
+                <Spinner
+                    android:id="@+id/cabspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolor" />
+
+                <EditText
+                    android:id="@+id/edit_tabstate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="Tab # &amp; State "
+                    android:singleLine="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+                <EditText
+                    android:id="@+id/edit_pvin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="PVIN "
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+                <Button
+                    android:id="@+id/btndriver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/button_selector"
+                    android:text="SAVE"
+                    android:textColor="@color/textcolor"
+                    android:textSize="15dp" />
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroundtwo">
+
+    <include
+        android:id="@+id/maintoolbar"
+        layout="@layout/main_toolbar"
+        android:visibility="visible"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maintoolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/maintoolbar"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_tripcomp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="TRIP SUMMARY"
+                    android:textColor="@color/textcolor"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/txt_chargecredit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text=" "
+                    android:textColor="@color/textcolor"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:id="@+id/txt_pickuplocation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/dark_bg"
+                        android:gravity="center|start"
+                        android:padding="10dp"
+                        android:text="PICKUP LOCATION:"
+                        android:textColor="@color/textcolor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txt_locationpik"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="1dp"
+                        android:background="@mipmap/light_bg"
+                        android:gravity="center|start"
+                        android:hint=""
+                        android:padding="10dp"
+                        android:textColor="@color/textcolor"
+                        android:textColorHint="@color/textcolor"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/txt_droploc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/dark_bg"
+                        android:gravity="center|start"
+                        android:padding="10dp"
+                        android:text="DROP OFF LOCATION:"
+                        android:textColor="@color/textcolor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txt_locationdrop"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:background="@mipmap/light_bg"
+                        android:hint=""
+                        android:textColor="@color/textcolor"
+                        android:textColorHint="@color/textcolor"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".0"
+                        android:background="@mipmap/profile_bg"
+                        android:src="@mipmap/profile_icon" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <TextView
+                                android:id="@+id/txt_name"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:background="@mipmap/dark_bg"
+                                android:gravity="center|start"
+                                android:text="Passenger Name:"
+                                android:textColor="@color/textcolor"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/passenger_name"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:background="@mipmap/light_bg"
+                                android:gravity="center|start"
+                                android:hint=""
+                               android:padding="10dp"
+                                android:textColor="@color/textcolor"
+                                android:textColorHint="@color/textcolor"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/grossfares"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:background="@mipmap/dark_bg"
+                                android:gravity="center|start"
+                                android:text="Gross Fare"
+                                android:textColor="@color/textcolor"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/grossfare"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:padding="10dp"
+                                android:layout_weight="1"
+                                android:background="@mipmap/light_bg"
+                                android:hint=""
+                                android:textColor="@color/textcolor"
+                                android:textColorHint="@color/textcolor"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/currentdate_times"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:background="@mipmap/dark_bg"
+                                android:gravity="center|start"
+                                android:text="Date &amp; Time "
+                                android:textColor="@color/textcolor"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/currentdate_time"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:background="@mipmap/light_bg"
+                                android:hint=""
+                                android:textColor="@color/textcolor"
+                                android:textColorHint="@color/textcolor"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_tip"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@mipmap/smallbutton"
+                            android:text="TIP"
+                            android:textColor="@color/textcolor"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/trip_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:text="HOW WOULD YOU RATE YOUR TRIP"
+                    android:textColor="@color/textcolor"
+                    android:textSize="12sp"/>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <RatingBar
+                        android:id="@+id/trip_rating"
+                        style="@style/RatingBar"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="5"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/howyour_trip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:text="HOW WAS YOUR TRIP?"
+                    android:textColor="@color/textcolor"
+                    android:textSize="12sp"/>
+
+                <EditText
+                    android:id="@+id/definetrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:background="@mipmap/edittext_bg"
+                    android:paddingBottom="5dp"
+
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="50dp"
+                    android:background="@mipmap/smallbutton"
+                    android:text="SUBMIT"
+                    android:textColor="@color/textcolor"
+                    android:textSize="12sp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

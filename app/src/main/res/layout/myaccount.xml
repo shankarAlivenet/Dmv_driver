@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/maintoolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/maintoolbar"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:text="MY ACCOUNT"
+                    android:textColor="@color/textcolor"
+                    android:textSize="20dp" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_prifile_show"
+                    android:layout_width="60dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/profile_icon"/>
+
+
+                <EditText
+                    android:id="@+id/edit_firname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:hint="First Name"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+                <EditText
+                    android:id="@+id/edit_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="Last Name"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+                <EditText
+                    android:id="@+id/edit_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+                <EditText
+                    android:id="@+id/edit_confirmpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+                <EditText
+                    android:id="@+id/edit_dctc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="DCTC ID"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+
+                <TextView
+                    android:id="@+id/edit_exprdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:text="Expiration Date"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+
+                <TextView
+                    android:id="@+id/edit_cell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="Cell Phone "
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:maxLength="12"
+                    android:inputType="phone"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+
+                <TextView
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="Email"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+                <EditText
+                    android:id="@+id/edit_confirmemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="Confirm Email"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+
+                <EditText
+                    android:id="@+id/edit_licenid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="Driver's License"
+                    android:singleLine="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+
+                <!--  <EditText
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:background="@mipmap/edittext_bg"
+                      android:hint="LAST NAME"
+                      android:paddingBottom="5dp"
+                      android:paddingLeft="10dp"
+                      android:paddingRight="5dp"
+                      android:paddingTop="5dp"
+                      android:textColor="@color/White"
+                      android:textColorHint="@color/White" />-->
+
+
+                <EditText
+                    android:id="@+id/edit_proofinsu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:hint="Proof of Insurance"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+                <EditText
+                    android:id="@+id/edit_nameinsu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:hint="Name of Insurance"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+                <Spinner
+                    android:id="@+id/cabspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolor" />
+
+                <EditText
+                    android:id="@+id/edit_vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="Taxi Name"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+
+                <EditText
+                    android:id="@+id/edit_tabstate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="TAB #  STATE "
+                    android:singleLine="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+                <EditText
+                    android:id="@+id/edit_pvin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:background="@mipmap/edittext_bg"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:hint="PVIN "
+                    android:singleLine="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor" />
+
+                <Button
+                    android:id="@+id/btndriver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/button_selector"
+                    android:text="SAVE CHANGES"
+                    android:textColor="@color/textcolor"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
